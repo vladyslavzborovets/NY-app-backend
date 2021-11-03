@@ -1,7 +1,7 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "",
+  "description": "NODE JS",
   "main": "server.js",
   "dependencies": {
     "cors": "^2.8.5",
@@ -16,5 +16,13 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladyslavzborovets/NY-app-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vladyslavzborovets/NY-app-backend/issues"
+  },
+  "homepage": "https://github.com/vladyslavzborovets/NY-app-backend#readme"
 }
