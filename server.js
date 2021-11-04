@@ -5,14 +5,19 @@ require('dotenv').config()
 
 const PORT = process.env.PORT
 const app = express();
-
+//middleware
 app.use(cors({ credentials: true }))
 app.use(express.json())
 // app.use(express.urlencoded({extended:true}));
 // app.use(express.static('public'))
 
+const nyLogsController = require('./controller/ny-logs')
+app.use('/nyLogs', nyLogsController)
+
+
+//listener
 app.get('/', (req, res) => {
-    res.send('Hello Gilbert and Vlad');
+    res.redirect('/ny-logs');
 })
 
 app.listen(PORT, () =>  {
