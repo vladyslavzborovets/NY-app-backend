@@ -12,7 +12,7 @@ app.use(express.json())
 // app.use(express.static('public'))
 
 const nyLogsController = require('./controller/ny-logs')
-app.use('/nyLogs', nyLogsController)
+app.use('/', nyLogsController)
 
 
 //listener
